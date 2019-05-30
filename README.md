@@ -3,7 +3,7 @@
 SPACE = to start the game, X = to close the game
 Space = JUMP USE the arrows left and right to move left and right.
 # Zip File of the Game
-https://doniablue.github.io/Alien_Escape/
+https://github.com/doniablue/Alien_Escape.git
 # The Goal
 The goal of the game is to complete all the levels without getting hit by the eniemies. You have 3 lives and each time you get hit
 by an enemy you lose a life.
