@@ -1,7 +1,8 @@
 # Alien_Escape
 
 # How To Play
-SPACE = to start the game, X = to close the game
+SPACE = to start the game
+X = to close the game
 Space = JUMP 
 Arrow right = moves right
 Arrow left = moves left
