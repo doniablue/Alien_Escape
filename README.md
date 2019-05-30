@@ -13,3 +13,10 @@ by an enemy you lose a life.
 ![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/platformer-final-template-animated/assets/images/characters/platformPack_tile011.png)
 # The Game Screen
 ![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/StartScreen.png)
+# Levels
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/Level1.png)
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/Level2.png)
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/Level3.png)
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/Screenshot%20(11).png)
+# Win Screen
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/Screenshot%20(12).png)
