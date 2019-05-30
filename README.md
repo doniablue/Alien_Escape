@@ -1,7 +1,12 @@
 # Alien_Escape
-# Window
+
+# How To Play
 SPACE = to start the game, X = to close the game
-Space = JUMP USE the arrows left and right to move left and right.
+Space = JUMP 
+Arrow right = moves right
+Arrow left = moves left
+Flag = end of level
+
 # Zip File of the Game
 https://github.com/doniablue/Alien_Escape.git
 # The Goal
