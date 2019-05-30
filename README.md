@@ -23,8 +23,10 @@ a lot of obstables to get to where he needs to go. The alien only has 3 lives an
 be with his mother. 
 # The Player
 ![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/platformer-final-template-animated/assets/images/characters/p2_jump.png)
+# The Goal
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/platformer-final-template-animated/assets/images/characters/shipPink_manned.png)
 # The Enemy
-![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/platformer-final-template-animated/assets/images/characters/platformPack_tile011.png)
+![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/platformer-final-template-animated/assets/images/characters/fireball1.png)
 # The Game Screen
 ![Alt Text](https://raw.githubusercontent.com/doniablue/Alien_Escape/master/Screenshots/StartScreen.png)
 # Levels
