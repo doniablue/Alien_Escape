@@ -1,0 +1,125 @@
+{
+	"layout": {
+		"scale": 64,
+		"size": [48, 10],
+		"start": [1, 7],
+		"goal": [44, 3, 2, 6]
+	},
+
+	"physics": {
+		"gravity": 1.5,
+		"terminal_velocity": 36
+	},
+
+	"music": "assets/sounds/theme.ogg",
+
+	"background": {
+		"color": [0, 0, 0],
+		"image1": "assets/images/backgrounds/castles.png",
+		"parallax_speed1": 0.6
+	},
+
+	"tiles": {
+		"midground": [
+			[44.9, 5, "FlagTop"],
+			[44.9, 6, "FlagPole"],
+			[44.9, 7, "FlagPole"],
+			[44.9, 8, "FlagPole"]
+	],
+
+		"main": [
+			[1, 9, "Stone"],
+			[2, 9, "Stone"],
+			[3, 9, "Stone"],
+			[0, 9, "Stone"],
+			[4, 9, "Stone"],
+			[5, 9, "Stone"],
+			[6, 9, "Stone"],
+			[7, 9, "Stone"],
+			[8, 9, "Stone"],
+			[9, 9, "Stone"],
+			[10, 9, "Stone"],
+			[11, 9, "Stone"],
+			[12, 9, "Stone"],
+			[13, 9, "Stone"],
+			[14, 9, "Stone"],
+			[15, 9, "Stone"],
+			[16, 9, "Stone"],
+			[17, 9, "Stone"],
+			[18, 9, "Stone"],
+			[19, 9, "Stone"],
+			[20, 9, "Stone"],
+			[21, 9, "Stone"],
+			[22, 9, "Stone"],
+			[23, 9, "Stone"],
+			[24, 9, "Stone"],
+			[25, 9, "Stone"],
+			[26, 9, "Stone"],
+			[27, 9, "Stone"],
+			[28, 9, "Stone"],
+			[29, 9, "Stone"],
+			[30, 9, "Stone"],
+			[31, 9, "Stone"],
+			[32, 9, "Stone"],
+			[33, 9, "Stone"],
+			[34, 9, "Stone"],
+			[35, 9, "Stone"],
+			[36, 9, "Stone"],
+			[37, 9, "Stone"],
+			[38, 9, "Stone"],
+			[39, 9, "Stone"],
+			[40, 9, "Stone"],
+			[41, 9, "Stone"],
+			[42, 9, "Stone"],
+			[43, 9, "Stone"],
+			[44, 9, "Stone"],
+			[45, 9, "Stone"],
+			[46, 9, "Stone"],
+			[47, 9, "Stone"],
+
+			[9, 4, "StonePlatform"],
+			[10, 4, "StonePlatform"],
+			[11, 4, "StonePlatform"],
+			[12, 4, "StonePlatform"],
+
+			[15, 7, "StonePlatform"],
+
+			[20, 7, "StonePlatform"],
+			[20, 8, "Stone"],
+
+			[27, 7, "StonePlatform"],
+			[28, 7, "StonePlatform"],
+			[29, 7, "StonePlatform"],
+			[30, 7, "StonePlatform"],
+			[31, 7, "StonePlatform"],
+
+			[33, 5, "StonePlatform"],
+			[34, 5, "StonePlatform"],
+			[35, 5, "StonePlatform"]
+		],
+
+		"foreground": [
+		]
+	},
+
+	"items": [
+		[10, 3, "Gem"],
+		[20, 5, "Gem"],
+		[29, 6, "Gem"],
+		[34, 4, "Gem"]
+	],
+
+	"enemies": [
+		[11, 3, "BasicEnemy"],
+		[18, 8, "BasicEnemy"],
+		[30, 6, "StonePlatformEnemy"],
+		[34, 4, "StonePlatformEnemy"],
+		[9, 5, "SpikesEnemy"],
+		[10, 5, "SpikesEnemy"],
+		[11, 5, "SpikesEnemy"],
+		[12, 5, "SpikesEnemy"],
+		[21, 8, "SpikesEnemy"],
+		[22, 8, "SpikesEnemy"],
+		[23, 8, "SpikesEnemy"]
+	]
+}

@@ -1,0 +1,121 @@
+{
+	"layout": {
+		"scale": 64,
+		"size": [48, 10],
+  		"start": [1, 7],
+		"goal": [44, 3, 2, 6]
+	},
+
+	"physics": {
+		"gravity": 1.5,
+		"terminal_velocity": 36
+	},
+
+	"music": "assets/sounds/theme.ogg",
+
+	"background": {
+		"color": [0, 0, 0],
+		"image1": "assets/images/backgrounds/desert.png",
+		"parallax_speed1": 0.6
+	},
+
+	"tiles": {
+		"midground": [
+			[44.9, 5, "FlagTop"],
+			[44.9, 6, "FlagPole"],
+			[44.9, 7, "FlagPole"],
+			[44.9, 8, "FlagPole"]
+	],
+
+		"main": [
+			[1, 9, "Sand"],
+			[2, 9, "Sand"],
+			[3, 9, "Sand"],
+			[0, 9, "Sand"],
+			[4, 9, "Sand"],
+			[5, 9, "Sand"],
+			[6, 9, "Sand"],
+			[7, 9, "Sand"],
+			[8, 9, "Sand"],
+			[9, 9, "Sand"],
+			[10, 9, "Sand"],
+			[11, 9, "Sand"],
+			[12, 9, "Sand"],
+			[13, 9, "Sand"],
+			[14, 9, "Sand"],
+			[15, 9, "Sand"],
+			[16, 9, "Sand"],
+			[17, 9, "Sand"],
+			[18, 9, "Sand"],
+			[19, 9, "Sand"],
+			[20, 9, "Sand"],
+			[21, 9, "Sand"],
+			[22, 9, "Sand"],
+			[23, 9, "Sand"],
+			[24, 9, "Sand"],
+			[25, 9, "Sand"],
+			[26, 9, "Sand"],
+			[27, 9, "Sand"],
+			[28, 9, "Sand"],
+			[29, 9, "Sand"],
+			[30, 9, "Sand"],
+			[31, 9, "Sand"],
+			[32, 9, "Sand"],
+			[33, 9, "Sand"],
+			[34, 9, "Sand"],
+			[35, 9, "Sand"],
+			[36, 9, "Sand"],
+			[37, 9, "Sand"],
+			[38, 9, "Sand"],
+			[39, 9, "Sand"],
+			[40, 9, "Sand"],
+			[41, 9, "Sand"],
+			[42, 9, "Sand"],
+			[43, 9, "Sand"],
+			[44, 9, "Sand"],
+			[45, 9, "Sand"],
+			[46, 9, "Sand"],
+			[47, 9, "Sand"],
+
+			[9, 4, "Platform"],
+			[9, 4, "Platform"],
+			[10, 4, "Platform"],
+			[11, 4, "Platform"],
+			[12, 4, "Platform"],
+
+			[15, 7, "Platform"],
+			[16, 7, "Platform"],
+
+			[27, 6, "Platform"],
+			[28, 6, "Platform"],
+			[29, 6, "Platform"],
+			[30, 6, "Platform"],
+			[31, 6, "Platform"],
+
+			[34, 4, "Platform"],
+			[35, 4, "Platform"],
+			[36, 4, "Platform"]
+		],
+
+		"foreground": [
+			[12, 8, "Cactus"],
+			[19, 8, "Cactus"],
+			[34, 8, "Cactus"]
+		]
+	},
+
+	"items": [
+		[10, 3, "Gem"],
+		[16, 6, "Gem"],
+		[21, 8, "Gem"],
+		[29, 5, "Gem"],
+		[35, 3, "Gem"]
+	],
+
+	"enemies": [
+		[11, 3, "BasicEnemy"],
+		[18, 8, "BasicEnemy"],
+		[30, 6, "PlatformEnemy"],
+		[34, 4, "PlatformEnemy"]
+	]
+}
