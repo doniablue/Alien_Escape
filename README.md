@@ -2,10 +2,15 @@
 
 # How To Play
 SPACE = to start the game
+
 X = to close the game
+
 Space = JUMP 
+
 Arrow right = moves right
+
 Arrow left = moves left
+
 Reach the flag at the end to complete the level.
 
 # Zip File of the Game
