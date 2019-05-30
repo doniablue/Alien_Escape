@@ -5,7 +5,7 @@ SPACE = to start the game, X = to close the game
 Space = JUMP 
 Arrow right = moves right
 Arrow left = moves left
-Flag = end of level
+Reach the flag at the end to complete the level.
 
 # Zip File of the Game
 https://github.com/doniablue/Alien_Escape.git
