@@ -4,6 +4,11 @@ import json
 import os
 import sys
 
+if getattr(sys, 'frozen', False):
+    application_path = sys._MEIPASS + '/'
+else:
+    application_path = os.path.dirname(__file__) + '/'
+
 # Initialize game engine
 pygame.mixer.pre_init()
 pygame.init()
@@ -15,7 +20,7 @@ TITLE = "Alien Escape"
 FPS = 30
 
 # Optional grid for help with level design
-show_grid = True
+show_grid = False
 grid_color = (150, 150, 150)
 
 screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
@@ -24,16 +29,16 @@ pygame.display.set_caption(TITLE)
 
 # Helper functions for loading assets
 def load_font(font_face, font_size):
-    return pygame.font.Font(font_face, font_size)
+    return pygame.font.Font(application_path +font_face, font_size)
 
 def load_image(path):
-    return pygame.image.load(path).convert_alpha()
+    return pygame.image.load(application_path +path).convert_alpha()
 
 def flip_image(img):
     return pygame.transform.flip(img, 1, 0)
 
 def load_sound(path):
-    return pygame.mixer.Sound(path)
+    return pygame.mixer.Sound(application_path +path)
 
 # Helper functions for playing music
 def play_music():
@@ -49,12 +54,12 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
 # Fonts
-font_xs = load_font(None, 16)
-font_sm = load_font(None, 32)
-font_md = load_font(None, 48)
-font_lg = load_font(None, 64)
-font_xl = load_font(None, 80)
-font_xxl = load_font(None, 120)
+font_xs = load_font('assets/fonts/Cheri.ttf', 16)
+font_sm = load_font('assets/fonts/Cheri.ttf', 32)
+font_md = load_font('assets/fonts/Cheri.ttf', 48)
+font_lg = load_font('assets/fonts/Cheri.ttf', 64)
+font_xl = load_font('assets/fonts/Cheri.ttf', 80)
+font_xxl = load_font('assets/fonts/Cheri.ttf', 120)
 
 # Sounds
 jump_snd = load_sound('assets/sounds/jump.ogg')
@@ -89,20 +94,21 @@ tile_images = { "Sand": load_image('assets/images/tiles/sand.png'),
                 "Stone": load_image('assets/images/tiles/stone.png'),
                 "StonePlatform": load_image('assets/images/tiles/stonePlatform.png'),
                 "Spikes": load_image('assets/images/tiles/spikes.png'),
-                "SpikesDown": load_image('assets/images/tiles/spikesDown.png')}
+                "SpikesDown": load_image('assets/images/tiles/spikesDown.png'),
+                "Mother": load_image('assets/images/characters/shipPink_manned.png')}
 
+basic_enemy_images = [ load_image('assets/images/characters/fireball1.png'),
+                       load_image('assets/images/characters/fireball2.png'),
+                       load_image('assets/images/characters/fireball3.png'),
+                       load_image('assets/images/characters/fireball4.png')]
 
-spike_enemy_images = [ load_image('assets/images/tiles/spikes.png'),
-                       load_image('assets/images/tiles/spikesDown.png') ]
+platform_enemy_images = [ load_image('assets/images/characters/fireball1.png'),
+                          load_image('assets/images/characters/fireball2.png'),
+                          load_image('assets/images/characters/fireball3.png'),
+                          load_image('assets/images/characters/fireball4.png')] 
 
-basic_enemy_images = [ load_image('assets/images/characters/platformPack_tile024a.png'),
-                       load_image('assets/images/characters/platformPack_tile024b.png') ]
+item_images = { "Gem": load_image('assets/images/items/gemBlue.png')}
 
-platform_enemy_images = [ load_image('assets/images/characters/platformPack_tile011a.png'),
-                          load_image('assets/images/characters/platformPack_tile011b.png') ] 
-
-item_images = { "Gem": load_image('assets/images/items/gemBlue.png'),
-                "Coin": load_image('assets/images/items/coinSilver.png')}
 
 # Levels
 levels = ["assets/levels/level_1.json",
@@ -432,7 +438,7 @@ class Gem(pygame.sprite.Sprite):
 
 class Level():
     def __init__(self, file_path):
-        with open(file_path, 'r') as f:
+        with open(application_path +file_path, 'r') as f:
             data = f.read()
 
         self.map_data = json.loads(data)
@@ -460,7 +466,7 @@ class Level():
         self.start_y = self.map_data['layout']['start'][1] * self.scale
 
     def load_music(self):
-        pygame.mixer.music.load(self.map_data['music'])
+        pygame.mixer.music.load(application_path + self.map_data['music'])
         
     def load_physics(self):
         self.gravity = self.map_data['physics']['gravity']
@@ -471,8 +477,8 @@ class Level():
         path1 = self.map_data['background']['image1']
         
 
-        if os.path.isfile(path1):
-            self.bg_image1 = pygame.image.load(path1).convert_alpha()
+        if os.path.isfile(application_path + path1):
+            self.bg_image1 = pygame.image.load(application_path + path1).convert_alpha()
         else:
             self.bg_image1 = None
 
@@ -625,6 +631,7 @@ class Game():
     def start_level(self):
         play_music()
         self.stage = Game.PLAYING
+
             
     def advance(self):
         if self.current_level < len(self.levels):
@@ -642,6 +649,7 @@ class Game():
         screen.blit(text, rect)
         
         text = font_md.render("Press space to start.", 1, BLACK)
+        
         rect = text.get_rect()
         rect.centerx = SCREEN_WIDTH // 2
         rect.centery = 272
@@ -708,12 +716,12 @@ class Game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
-                
+                        
             elif event.type == pygame.KEYDOWN:
                 if self.stage == Game.START:
                     if event.key == pygame.K_SPACE:
                         self.start_level()
-                        
+                      
                 elif self.stage == Game.PLAYING:
                     if event.key == pygame.K_SPACE:
                         self.hero.jump(self.level.main_tiles)
@@ -763,7 +771,6 @@ class Game():
         self.level.world.blit(self.level.inactive, [0, 0])
         self.level.world.blit(self.level.active, [0, 0])
         self.level.world.blit(self.level.foreground, [0, 0])
-
 
         ''' if show_grid:
             self.level.world.blit(self.level.grid, [0, 0]) '''                     

@@ -11,7 +11,7 @@
 		"terminal_velocity": 36
 	},
 
-	"music": "assets/sounds/theme.ogg",
+	"music": "assets/sounds/level3_music.ogg",
 
 	"background": {
 		"color": [0, 0, 0],

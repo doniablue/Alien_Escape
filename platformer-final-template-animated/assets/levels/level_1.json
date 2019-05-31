@@ -2,7 +2,7 @@
 	"layout": {
 		"scale": 64,
 		"size": [48, 10],
-  		"start": [1, 7],
+		"start": [1, 7],
 		"goal": [44, 3, 2, 6]
 	},
 
@@ -11,7 +11,7 @@
 		"terminal_velocity": 36
 	},
 
-	"music": "assets/sounds/theme.ogg",
+	"music": "assets/sounds/level1_music.ogg",
 
 	"background": {
 		"color": [0, 0, 0],
@@ -84,17 +84,20 @@
 			[12, 4, "Platform"],
 
 			[15, 7, "Platform"],
-			[16, 7, "Platform"],
 
-			[27, 6, "Platform"],
-			[28, 6, "Platform"],
-			[29, 6, "Platform"],
-			[30, 6, "Platform"],
-			[31, 6, "Platform"],
+			[20, 7, "Platform"],
+			[20, 7, "Platform"],
+			[20, 8, "Platform"],
 
-			[34, 4, "Platform"],
-			[35, 4, "Platform"],
-			[36, 4, "Platform"]
+			[27, 7, "Platform"],
+			[28, 7, "Platform"],
+			[29, 7, "Platform"],
+			[30, 7, "Platform"],
+			[31, 7, "Platform"],
+
+			[33, 5, "Platform"],
+			[34, 5, "Platform"],
+			[35, 5, "Platform"]
 		],
 
 		"foreground": [
@@ -106,10 +109,9 @@
 
 	"items": [
 		[10, 3, "Gem"],
-		[16, 6, "Gem"],
-		[21, 8, "Gem"],
-		[29, 5, "Gem"],
-		[35, 3, "Gem"]
+		[20, 5, "Gem"],
+		[29, 6, "Gem"],
+		[34, 4, "Gem"]
 	],
 
 	"enemies": [

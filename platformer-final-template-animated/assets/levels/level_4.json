@@ -95,7 +95,9 @@
 
 			[33, 5, "StonePlatform"],
 			[34, 5, "StonePlatform"],
-			[35, 5, "StonePlatform"]
+			[35, 5, "StonePlatform"],
+
+			[45, 8, "Mother"]
 		],
 
 		"foreground": [
@@ -113,13 +115,6 @@
 		[11, 3, "BasicEnemy"],
 		[18, 8, "BasicEnemy"],
 		[30, 6, "StonePlatformEnemy"],
-		[34, 4, "StonePlatformEnemy"],
-		[9, 5, "SpikesEnemy"],
-		[10, 5, "SpikesEnemy"],
-		[11, 5, "SpikesEnemy"],
-		[12, 5, "SpikesEnemy"],
-		[21, 8, "SpikesEnemy"],
-		[22, 8, "SpikesEnemy"],
-		[23, 8, "SpikesEnemy"]
+		[34, 4, "StonePlatformEnemy"]
 	]
 }

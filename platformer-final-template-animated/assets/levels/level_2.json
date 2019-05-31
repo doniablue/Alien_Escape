@@ -11,7 +11,7 @@
 		"terminal_velocity": 36
 	},
 
-	"music": "assets/sounds/theme.ogg",
+	"music": "assets/sounds/level2_music.ogg",
 
 	"background": {
 		"color": [0, 0, 0],
@@ -113,7 +113,7 @@
 		[8, 5, "Gem"],
 		[20, 6, "Gem"],
 		[32, 8, "Gem"],
-		[35, 4, "Gem"],
+		[35, 3, "Gem"],
 		[25, 1, "Gem"]
 	],
 
