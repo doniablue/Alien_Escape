@@ -1,4 +1,4 @@
-# Alien_Escape
+# Alien Escape
 
 # How To Play
 SPACE = to start the game
