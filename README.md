@@ -13,8 +13,12 @@ Arrow left = moves left
 
 Reach the flag at the end to complete the level.
 
-# Zip File of the Game
+# Source Code
 https://github.com/doniablue/Alien_Escape.git
+
+# Stand alone version
+https://github.com/doniablue/Alien_Escape/releases/download/1.0/Alien.Escape.exe
+
 # The Goal
 The goal of the game is to complete all the levels without getting hit by the eniemies. The baby alien is trying to look for his mother and only has 3 lives to do it and each time the alien gets hit by an enemy he loses a life.
 # Backstory
