@@ -14,7 +14,7 @@ Arrow left = moves left
 Reach the flag at the end to complete the level.
 
 # Source Code
-https://github.com/doniablue/Alien_Escape.git
+[View on Github](https://github.com/doniablue/Alien_Escape.git)
 
 # Stand alone version
 [Alien.Escape.exe](https://github.com/doniablue/Alien_Escape/releases/download/1.0/Alien.Escape.exe)
